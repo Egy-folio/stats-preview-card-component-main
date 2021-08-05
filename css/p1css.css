@@ -55,17 +55,4 @@ td{
 th{
     font-size: 0.8em;
 }
-@media only screen and (max-width: 600px) {
-    body {
-      display: block;
-    }
-    image{
-        width:100%;
-        height:auto;
-      float:none;
-    }
-    section{
-        width:100%;
-    }
-    
-}
+
