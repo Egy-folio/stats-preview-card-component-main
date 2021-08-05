@@ -62,5 +62,10 @@ th{
     image{
         width:100%;
         height:auto;
+      float:none;
     }
+    section{
+        width:100%;
+    }
+    
 }
