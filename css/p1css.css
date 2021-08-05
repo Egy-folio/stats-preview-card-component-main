@@ -1,5 +1,5 @@
 
-/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+/* If the screen size is 601px or more */
 @media only screen and (min-width: 601px) {
     image {
         width: "45%";
@@ -8,7 +8,7 @@
     }
   }
   
-  /* If the screen size is 600px or less, set the font-size of <div> to 30px */
+  /* If the screen size is 600px or less */
   @media only screen and (max-width: 600px) {
     image {
       width:100%;
@@ -41,7 +41,23 @@ body{
     margin:5%;
    
 }
-
+/* If the screen size is 601px or more */
+@media only screen and (min-width: 601px) {
+    body {
+        display: inline-flex;
+        flex-direction: row-reverse;
+        background-color: rgb(12,12,29);
+        margin:5%;
+    }
+  }
+  
+  /* If the screen size is 600px or less */
+  @media only screen and (max-width: 600px) {
+    body {
+        background-color: rgb(12,12,29);
+        margin:5%;
+    }
+  }
 span{
     color:#ac55de;
 }
@@ -66,4 +82,18 @@ td{
 }
 th{
     font-size: 0.8em;
+}
+@media only screen and (max-width: 600px) {
+    body {
+      display: block;
+    }
+    image{
+        width:100%;
+        height:auto;
+        float: none;
+    }
+    section{
+        width:100%
+
+    }
 }
