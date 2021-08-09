@@ -9,20 +9,31 @@ body{
     max-width: 100%;
 
 }
-@media (min-width:1000px) {
+.desktop{
+    display: none;
+}
+.mobile{
+    display: block;
+}
+@media (min-width:1150px) {
     .container{
         flex-direction: row-reverse;
     }
-
+    .desktop{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
 }
 
 .my-pic{
     background-color: hsl(277, 64%, 61%);
     width: 100%;
-    border: 2px solid rgb(250, 187, 14);
+    
 
 }
-@media (min-width:1000px){
+@media (min-width:1150px){
     .my-pic{
         max-width: 50%;
         height: 100%;
@@ -38,12 +49,12 @@ img{
     text-align: center;
     width: 100%;
 }
-@media (min-width:1000px){
+@media (min-width:1150px){
     .main{
         max-width: 50%;
         display: flex;
         flex-direction: column;
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
 }
 h1{
@@ -55,6 +66,12 @@ span{
 
 .paragraph{
     color:hsla(0, 0%, 100%, 0.75);
+}
+@media (min-width:1150px){
+    .stats-container{
+        display:flex;
+        justify-content: space-evenly;
+    }
 }
 .stats{
     color: white;
